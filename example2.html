@@ -1,0 +1,177 @@
+<html>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+  <script type="text/javascript" src="highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/swift.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/java.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/javascript.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/rust.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/ruby.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/go.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/python.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/php.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+  </script>
+  
+  <style>
+  #logo {height:32px;}
+  .flexbox {
+    width: 500px;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column;
+  }
+  body {font-family: Arial; text-rendering: optimizeLegibility;}
+  h3 {font-family: "Open Sans"; font-size: 32pt; text-rendering: optimizeLegibility;}
+  small {display: block; background-color: #ffffff;  text-rendering: optimizeLegibility; padding: 5px 2px; font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;}
+  .hljs-line-numbers { text-align: right; border-right: 1px solid #ccc; color: #999; -webkit-touch-callout: none; user-select: none; }
+  .badge {color: #eee;
+    background-color: #5a6f4f;
+    font-size: 9pt;
+    padding: 4px 7px;
+    border-radius: 3px;}
+  .codeblock {margin-bottom: 10px;}
+  pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 13px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+     text-rendering: optimizeLegibility;
+  }
+  .output {border: 1px solid rgba(204, 204, 204, 0.5); padding: 6px; text-rendering: optimizeLegibility; font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; margin-bottom: 3.2em;}
+  .codeblock, .output {
+  -webkit-flex: 1;
+  flex: 1;
+  }
+  a.svg {
+  position: relative;
+  display: inline-block;
+  }
+  a.svg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  }
+</style>
+
+<a href="/" class="svg"><object id="logo" type="image/svg+xml" data="cclogo.svg">SVG not supported</object></a>
+
+<h5>Printing</h5>
+<p>Print "Hello, world!" message on a display device.</p>
+
+<div class="flexbox">
+<div class="header"><small>Swift 3</small></div>
+<div class="codeblock">
+<pre><code class="swift">import Foundation
+print("Hello World!")</code></pre>
+</div>
+<div class="output">
+Hello World!
+</div>
+</div>
+
+<div class="flexbox">
+<div class="codeblock">
+<small>Rust 1.2</small>
+<pre><code class="rust">fn main() {
+  println!("Hello World!")
+}</code></pre>
+</div>
+<div class="output">
+Hello World!
+</div>
+</div>
+
+<div class="flexbox">
+<small>Java 1.8</small>
+<div class="codeblock">
+<pre><code class="java">public class Root {
+  public static void main(String[] args) {
+    system.out.println("Hello World!")
+  }
+}
+</code></pre>
+</div>
+<div class="output">
+Hello World!
+</div>
+</div>
+
+<div class="flexbox">
+<small>Javascript ES6</small>
+<div class="codeblock">
+<pre><code class="javascript">console.log("Hello World!")</code></pre>
+</div>
+<div class="output">
+Hello World!
+</div>
+</div>
+
+<div class="flexbox">
+<small>Python 3</small>
+<div class="codeblock">
+<pre><code class="python">print("Hello World!")</code></pre>
+</div>
+<div class="output">
+Hello World!
+</div>
+</div>
+
+<div class="flexbox">
+<small>PHP 7</small>
+<div class="codeblock">
+<pre><code class="php">print "Hello World!";</code></pre>
+</div>
+<div class="output">
+Hello World!
+</div>
+
+<div class="codeblock">
+<pre><code class="php">echo "Hello World!";</code></pre>
+</div>
+<div class="output">
+Hello World!
+</div>
+
+</div>
+
+<div class="flexbox">
+<small>Go 1.8</small>
+<div class="codeblock">
+<pre><code class="gp">package main
+
+import "fmt"
+
+func main(){
+  fmt.Println("Hello world!")
+}</code></pre>
+</div>
+<div class="output">
+Hello World!
+</div>
+</div>
+
+<div class="flexbox">
+<small>Ruby 2.4</small>
+<div class="codeblock">
+<pre><code class="ruby">print "Hello World!"</code></pre>
+</div>
+<div class="output">
+Hello World!
+</div>
+
+<div class="codeblock">
+<pre><code class="ruby">puts "Hello World!"</code></pre>
+</div>
+<div class="output">
+Hello World!
+</div>
+</div>
+  
+ 
+</html>
