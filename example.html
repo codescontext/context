@@ -67,6 +67,23 @@
 <div class="flexbox">
 <div class="header"><small>Swift 3</small></div>
 <div class="codeblock">
+<pre><code class="swift">func fib(n: Int) -> Int {
+    if n <= 1 {
+        return 1
+    } else {
+        return (fib(n: n - 1) + fib(n: n - 2))
+    }
+}
+
+print(fib(n: 46))
+</code></pre>
+</div>
+
+</div>
+
+<div class="flexbox">
+<div class="header"><small>Swift 3</small></div>
+<div class="codeblock">
 <pre><code class="swift">import Foundation
 print("Hello World!")</code></pre>
 </div>
